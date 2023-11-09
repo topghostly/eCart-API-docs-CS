@@ -12,6 +12,9 @@ function Mainbar() {
 const Root = styled.div`
   padding: 30px;
 `;
-const Title = styled.h1``;
+const Title = styled.h1`
+  font-family: var(--header-font-family);
+  font-size: var(--header-font-size);
+`;
 
 export default Mainbar;

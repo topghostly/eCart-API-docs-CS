@@ -1,5 +1,14 @@
+@font-face {
+  font-family: "Montsarrat-Regular";
+  src: url(./assets//fonts//Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: "Montsarrat-Bold";
+  src: url(./assets//fonts//Montserrat-Bold.ttf);
+}
 #root {
-  --header-font-size: 30px;
+  --header-font-size: 40px;
+  --header-font-family: "Montsarrat-Bold";
   --font-size: 17px;
   --sub-header-font-size: 20px;
   --nav-background-color: #f7f7f7;
@@ -7,4 +16,5 @@
   margin: 0 auto;
   padding: 0px 10px;
   font-size: 17px;
+  font-family: "Montsarrat-Regular";
 }
