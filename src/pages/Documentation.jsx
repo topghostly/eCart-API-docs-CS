@@ -1,8 +1,22 @@
 import React from "react";
+import styled from "styled-components";
+import NavBar from "../components/NavBar";
+import Mainbar from "../components/Mainbar";
 
-function documentation(){
-    return(
-        <h1>This is the documentation page</h1>
-    )
+function documentation() {
+  return (
+    <>
+      <View>
+        <NavBar />
+        <Mainbar />
+      </View>
+    </>
+  );
 }
-export default documentation
+const View = styled.div`
+  display: grid;
+  grid-template-columns: 25% 75%;
+  height: 100vh;
+`;
+
+export default documentation;
