@@ -18,6 +18,14 @@ const Main = styled.div`
   overflow-y: scroll;
   border-right: solid 1px #e6e6e6;
   position: relative;
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-thumb {
+    width: 4px;
+    background-color: #e6e6e6;
+  }
 `;
 
 const Block = styled.div`

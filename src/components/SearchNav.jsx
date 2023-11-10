@@ -17,7 +17,7 @@ const SearchBox = styled.div`
 
   margin-bottom: var(--small-margin);
   background-color: white;
-  width: 213px;
+  width: 225px;
 
   img {
     width: 17px;

@@ -20,3 +20,7 @@
   --small-margin: 20px;
   --big-margin: 20px;
 }
+::selection {
+  background-color: red;
+  color: white;
+}
