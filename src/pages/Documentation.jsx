@@ -15,7 +15,7 @@ function documentation() {
 }
 const View = styled.div`
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 250px auto;
   height: 100vh;
 `;
 

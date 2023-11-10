@@ -1,46 +1,28 @@
 import React from "react";
 import styled from "styled-components";
-import searchSVG from "../assets/search.svg";
+import SearchNav from "./SearchNav";
 
 function NavBar() {
   return (
     <Main>
-      <SearchBox>
-        <img src={searchSVG} alt="search-button" />
-        <input type="text" />
-      </SearchBox>
+      <SearchNav />
+      <Block />
     </Main>
   );
 }
 
 const Main = styled.div`
   display: block;
-  background-color: var(--nav-background-color);
-  padding: 30px;
-`;
-
-const SearchBox = styled.div`
+  padding: 30px 10px;
+  height: 100vh;
+  overflow-y: scroll;
+  border-right: solid 1px #e6e6e6;
   position: relative;
-  height: 45px;
-
-  img {
-    width: 17px;
-    position: absolute;
-    transform: translateY(-50%);
-    top: 50%;
-    left: 12px;
-  }
-
-  input {
-    width: 100%;
-    height: 100%;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    background-color: #dfdfdf53;
-    padding: 0px 0px 0px 40px;
-    font-size: var(--text-font);
-  }
 `;
 
+const Block = styled.div`
+  display: block;
+  height: 200vh;
+  background-color: blue;
+`;
 export default NavBar;
