@@ -6,25 +6,21 @@ function SearchNav() {
   return (
     <SearchBox>
       <img src={searchSVG} alt="search-button" />
-      <input type="text" />
+      <input type="text" placeholder="Find anything" />
     </SearchBox>
   );
 }
 const SearchBox = styled.div`
-  position: fixed;
-  padding: 10px 0px;
-  top: 0px;
-
   margin-bottom: var(--small-margin);
   background-color: white;
-  width: 225px;
-
+  position: relative;
+  padding: 0px 10px;
   img {
-    width: 17px;
+    width: 15px;
     position: absolute;
     transform: translateY(-50%);
     top: 50%;
-    left: 12px;
+    left: 25px;
     transition: all 0.2s ease-in-out;
 
     :hover {
@@ -35,15 +31,16 @@ const SearchBox = styled.div`
   }
 
   input {
-    height: 38px;
+    height: 35px;
     width: 100%;
     overflow-y: scroll;
     outline: none;
     border: none;
-    border-radius: 5px;
-    border: solid 1px #4b4b4b52;
+    border-radius: 9px;
+    border: solid 1px #4b4b4b2b;
     padding: 0px 0px 0px 40px;
     font-size: var(--text-font);
+    font-size: 13px;
   }
 `;
 

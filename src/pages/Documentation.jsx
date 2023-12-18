@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import NavBar from "../components/NavBar";
-import Mainbar from "../components/Mainbar";
+import NavBar from "../components/NavBarSection/NavBar";
+import Mainbar from "../components/MainBarSections/Mainbar";
 
 function documentation() {
   return (
@@ -15,7 +15,7 @@ function documentation() {
 }
 const View = styled.div`
   display: grid;
-  grid-template-columns: 250px auto;
+  grid-template-columns: 210px auto;
   height: 100vh;
 `;
 

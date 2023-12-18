@@ -3,24 +3,57 @@
   src: url(./assets//fonts//Montserrat-Regular.ttf);
 }
 @font-face {
-  font-family: "Montsarrat-Bold";
-  src: url(./assets//fonts//Montserrat-Bold.ttf);
+  font-family: "BRSigma-Medium";
+  src: url(./assets//fonts/BRSegma-Regular-BF654d990a3279a.otf);
+}
+@font-face {
+  font-family: "BRSigma-Regular";
+  src: url(./assets//fonts/BRSegma-Regular-BF654d990a3279a.otf);
+}
+@font-face {
+  font-family: "BRSigma-Semi-Bold";
+  src: url(./assets//fonts/BRSegma-SemiBold-BF654d990a3d889.otf);
 }
 #root {
-  --header-font-size: 32px;
-  --header-font-family: "Montsarrat-Bold";
-  --font-size: 17px;
+  /* Letter size */
+  --header-font-size: 25px;
+  --header-font-family: "BRSigma-Semi-Bold";
+  --font-size: 13px;
+  --nav-font-size: 13px;
   --sub-header-font-size: 20px;
+  /* Letter size */
+
+  /* Margin size */
+  --small-margin: 20px;
+  --mid-margin: 40px;
+  --big-margin: 80px;
+  /* Margin size */
+
+  /* Colors */
+  --theme-color-light: rgb(186, 186, 255);
+  --theme-color: rgb(53, 53, 230);
+  /* Colors */
+
   /* max-width: 1280px; */
   margin: 0 auto;
+
   /* padding: 0px 10px; */
-  font-size: 17px;
-  font-family: "Montsarrat-Regular";
-  color: rgb(26, 26, 26);
-  --small-margin: 20px;
-  --big-margin: 20px;
+  font-size: var(--font-size);
+  font-weight: 100;
+  font-family: "BRSigma-Regular";
+  color: rgb(61, 61, 61);
+
+  line-height: 25px;
 }
 ::selection {
-  background-color: red;
+  background-color: var(--theme-color);
   color: white;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  width: 8px;
+  background-color: #e6e6e6;
+  border-radius: 10px;
 }
